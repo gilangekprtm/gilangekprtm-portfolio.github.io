@@ -40,19 +40,20 @@ a.social {
     max-height: 50px;
 }
 
-.kontak {
-    background: url("https://wallpaperaccess.com/full/1867010.jpg") no-repeat
-    center center;
-    background-size: cover;
-    padding-bottom: 20%;
-    padding-top: 20%;
-    color: #fff;
+#profile {
+    border-radius: 500px;
 }
 
-.ins {
-    width: 8%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media only screen and (max-width: 600px) {
+    #portfolio {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    #portfolio {
+        width: 230px;
+        height: 150px;
+    }
 }

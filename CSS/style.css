@@ -96,8 +96,16 @@ a.social {
     max-height: 50px;
 }
 
+.img-logo {
+    height: auto;
+    max-height: 60px;
+    transition: opacity 2s ease-in;
+}
+
 #profile {
-    border-radius: 500px;
+    width: 350px;
+    height: 350px;
+    border-radius: 20%;
 }
 
 @media only screen and (max-width: 600px) {

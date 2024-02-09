@@ -68,3 +68,16 @@ function checkScrollAbout() {
 }
 
 window.addEventListener('scroll', checkScrollAbout);
+
+// Gambar berganti otomatis ciwidey-card
+
+let images = ["img/IMG_7078.jpg", "img/IMG_7075.jpg", "img/IMG_7098.jpg", "img/IMG_7111.jpg"];
+let currentImageIndex = 0;
+let imgElements = document.querySelectorAll(".ciwidey-card img");
+
+setInterval(() => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    imgElements.forEach((img) => {
+    img.src = images[currentImageIndex];
+    });
+}, 2000); // Ubah gambar setiap 2 detik

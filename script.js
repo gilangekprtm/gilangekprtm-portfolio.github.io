@@ -71,13 +71,26 @@ window.addEventListener('scroll', checkScrollAbout);
 
 // Gambar berganti otomatis ciwidey-card
 
-let images = ["img/IMG_7078.jpg", "img/IMG_7075.jpg", "img/IMG_7098.jpg", "img/IMG_7111.jpg"];
-let currentImageIndex = 0;
-let imgElements = document.querySelectorAll(".ciwidey-card img");
+let imagesCiwidey = ["img/IMG_7078.jpg", "img/IMG_7075.jpg", "img/IMG_7098.jpg", "img/IMG_7111.jpg"];
+let currentImageCiwideyIndex = 0;
+let imgCiwideyElements = document.querySelectorAll(".ciwidey-card img");
 
 setInterval(() => {
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    imgElements.forEach((img) => {
-    img.src = images[currentImageIndex];
+    currentImageCiwideyIndex = (currentImageCiwideyIndex + 1) % imagesCiwidey.length;
+    imgCiwideyElements.forEach((img) => {
+    img.src = imagesCiwidey[currentImageCiwideyIndex];
+    });
+}, 2000); // Ubah gambar setiap 2 detik
+
+// Gambar berganti otomatis ciwidey-card
+
+let imagesPangalengan = ["img/kebun teh.jpg", "img/IMG_7025.jpg", "img/IMG_7022.jpg", "img/IMG_6973.jpg"];
+let currentImagePangalenganIndex = 0;
+let imgPangalenganElements = document.querySelectorAll(".pangalengan-card img");
+
+setInterval(() => {
+    currentImagePangalenganIndex = (currentImagePangalenganIndex + 1) % imagesPangalengan.length;
+    imgPangalenganElements.forEach((img) => {
+    img.src = imagesPangalengan[currentImagePangalenganIndex];
     });
 }, 2000); // Ubah gambar setiap 2 detik
